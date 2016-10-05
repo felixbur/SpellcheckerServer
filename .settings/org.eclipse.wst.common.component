@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="WebAppTemplateServer">
+        <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
+        <dependent-module archiveName="FelixUtil.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/FelixUtil/FelixUtil">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="WebMaintenance.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/WebMaintenance/WebMaintenance">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="TextParserLib.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/Rootvole/Rootvole">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <property name="java-output-path" value="/WebAppTemplateServer/build/classes"/>
+        <property name="context-root" value="SpellcheckerServer"/>
+    </wb-module>
+</project-modules>

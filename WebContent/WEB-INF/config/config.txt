@@ -1,0 +1,27 @@
+# general
+loggerConfig=/WEB-INF/config/logConfig.xml
+loggerName=SpellcheckerServer
+configDir=WEB-INF/config/
+contextName=SpellcheckerServer
+### preprocessor configuration
+preproRules=WEB-INF/config/prepro.rules
+
+
+# special
+filterLogfileLines=WEB-INF/logs/filteredLog.txt
+logFile=WEB-INF/logs/spellcheckerServer.log
+maxLevenshtein=4
+withMultiwordReco=true
+dicFilePath=res/dict/
+ignoreWhitespace=true
+dictionaries=de_DE;CX
+userDicPath=res/dict/CX/CX.dic
+tempDir=temp
+msg_AllDone=Die Wörter wurden dem Vokabular hinzugefügt und der Spellchecker neu initialisiert.
+userGeneralVocabMinDistance=0
+
+# maintenance
+maintenanceActions=restart server,init;refresh from file,refreshFiles;filter loglines,exec filterLoglines;
+maintenanceUploads=DE_CX dictionary,D:/workspace/.metadata/.plugins/org.eclipse.wst.server.core/tmp2/wtpwebapps/SpellcheckerServer/res/dict/DE_CX/DE_CX.dic;
+maintenanceLinks=
+maintenanceFiles=config file,config.txt,w;log file,../logs/spellcheckerServer.log,r,r,f;de_DE,../../res/dict/de_DE/de_DE.dic,w;CX,../../res/dict/CX/CX.dic,w;DE_CX,../../res/dict/DE_CX/DE_CX.dic,w,;filtered log lines,../../WEB-INF/logs/filteredLog.txt
